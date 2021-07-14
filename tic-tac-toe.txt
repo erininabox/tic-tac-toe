@@ -1,0 +1,69 @@
+Tic Tac Toe
+
+Draw a board
+    -3x3 grid
+
+Two players, X and O
+
+X placed in one of the squares
+O placed in one of the open squares
+Once a square has a letter in it, it can't be changed
+
+
+
+WIREFRAMES
+
+3x3 grid
+
+MINIMUM VIABLE PRODUCT or "MVP"
+
+Where from here?
+
+- Draw a grid
+    - CSS
+        -flexbox
+        -grid
+    - HTML
+        -semantic tags
+- What are the X's and O's going to be? How do they fill a square?
+    - CSS?
+    - HTML inner-text?
+
+.square {
+    visibility: hidden;
+    display: none;
+}
+
+button {
+    inner-text: ;
+};
+
+
+How do they fill a square?
+    - JS
+        - event listener when a square is clicked
+
+How to keep a square from being changed once it is filled with an X or O?
+    - JS
+        Conditions:
+            - turn off the event listener by nesting into a conditional - if square is full, event listener doesn't work
+            - Conditional, i.e. "if square is filled, remove it from the list of available squares."
+            - an array of available squares, and removing a square from the array once it is filled
+
+How to start game?
+    - JS
+        -newGame function has a counter of how many executed clicks have been made on the board
+
+How to alternate turns?
+    -JS
+        - i.e. X goes on odd numbered turns, O goes on even numbered turns
+        - modulus % operator
+
+        How to define a turn?
+        - for loop?
+
+How to know when the game is over?
+    - JS
+        - A conditional will define a winning condition, and then determine if a winning condition has been achieved
+        - if/else - If no winning condition has been reached and all the squares are full, this will trigger a tie 
+        
