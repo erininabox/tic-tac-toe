@@ -1,0 +1,98 @@
+body {
+
+}
+
+header {
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+}
+
+div {
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.infobox {
+    display:inline-block;
+    text-align: center;
+    padding: 0px 40px 0px 0px;
+}
+#board {
+}
+.turn-toggle {
+    
+}
+
+.turn-announce {
+    
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 150px);
+}
+
+.square {
+}
+
+.x {
+    background-image: url('../img/x.png')
+    background-size: cover;
+}
+
+.o {
+    background-image: url('../img/x.png')
+    background-size: cover;
+}
+
+.square1a {
+    border-width: 0px 1px 1px 0px;
+    border-color: purple;
+    border-style: solid;
+}
+.square1b {
+    border-width: 0px 1px 1px 1px;
+    border-color: purple;
+    border-style: solid;  
+}
+.square1c {
+    border-width: 0px 0px 1px 1px;
+    border-color: purple;
+    border-style: solid;
+}
+.square2a {
+    border-width: 1px 1px 1px 0px;
+    border-color: purple;
+    border-style: solid;
+}
+.square2b {
+    border-width: 1px 1px 1px 1px;
+    border-color: purple;
+    border-style: solid;
+}
+.square2c {
+    border-width: 1px 0px 1px 1px;
+    border-color: purple;
+    border-style: solid;
+}
+.square3a {
+    border-width: 1px 1px 0px 0px;
+    border-color: purple;
+    border-style: solid;
+}
+.square3b {
+    border-width: 1px 1px 0px 1px;
+    border-color: purple;
+    border-style: solid;
+}
+.square3c {
+    border-width: 1px 0px 0px 1px;
+    border-color: purple;
+    border-style: solid;
+}
