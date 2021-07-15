@@ -5,6 +5,7 @@ body {
 header {
     text-align: center;
     padding: 20px 0px 50px 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 div {
@@ -22,14 +23,24 @@ main {
     text-align: center;
     padding: 0px 40px 0px 0px;
 }
-#board {
-}
-.turn-toggle {
-    
+.new-game {
+    padding: 10px;
+    font-size: 20px;
 }
 
 .turn-announce {
-    
+    background-color: pink;
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.win-announce {
+    background-color: '';
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 .board {
@@ -42,12 +53,12 @@ main {
 }
 
 .x {
-    background-image: url('../img/x.png')
+    background-image: url('./img/x.png');
     background-size: cover;
 }
 
 .o {
-    background-image: url('../img/x.png')
+    background-image: url('./img/o.png');
     background-size: cover;
 }
 
