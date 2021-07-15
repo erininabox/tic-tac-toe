@@ -1,15 +1,7 @@
-body {
-
-}
-
 header {
     text-align: center;
     padding: 20px 0px 50px 0px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-div {
-
 }
 
 main {
@@ -49,9 +41,6 @@ main {
     grid-template-columns: repeat(3, 150px);
 }
 
-.square {
-}
-
 .x {
     background-image: url('./img/x.png');
     background-size: cover;
@@ -62,48 +51,57 @@ main {
     background-size: cover;
 }
 
-.square1a {
+#square1a {
     border-width: 0px 1px 1px 0px;
     border-color: purple;
     border-style: solid;
+    color: white;
 }
-.square1b {
+#square1b {
     border-width: 0px 1px 1px 1px;
     border-color: purple;
-    border-style: solid;  
+    border-style: solid; 
+    color: white; 
 }
-.square1c {
+#square1c {
     border-width: 0px 0px 1px 1px;
     border-color: purple;
     border-style: solid;
+    color: white;
 }
-.square2a {
+#square2a {
     border-width: 1px 1px 1px 0px;
     border-color: purple;
     border-style: solid;
+    color: white;
 }
-.square2b {
+#square2b {
     border-width: 1px 1px 1px 1px;
     border-color: purple;
     border-style: solid;
+    color: white;
 }
-.square2c {
+#square2c {
     border-width: 1px 0px 1px 1px;
     border-color: purple;
     border-style: solid;
+    color: white;
 }
-.square3a {
+#square3a {
     border-width: 1px 1px 0px 0px;
     border-color: purple;
     border-style: solid;
+    color: white;
 }
-.square3b {
+#square3b {
     border-width: 1px 1px 0px 1px;
     border-color: purple;
     border-style: solid;
+    color: white;
 }
-.square3c {
+#square3c {
     border-width: 1px 0px 0px 1px;
     border-color: purple;
     border-style: solid;
+    color: white;
 }
