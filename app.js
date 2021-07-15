@@ -47,7 +47,7 @@ function handleClick(event) {
     
     // Denotes who is the current player w/ class
     clickedSquare.classList.add(currentPlayer)
-    winner();
+    
 
     // Counts how many squares have contents
     let squareX = document.querySelectorAll(".x");
@@ -64,6 +64,10 @@ function handleClick(event) {
         currentPlayer = "x";
         turnAnnounce.textContent = "It is X's turn!";
     };
+
+    // Calls the winner function
+    winner();
+
     // Checks for tie
     function checkForTie() {
         let numOfBlankSquares = 9 - numOfFullSquares;
@@ -79,35 +83,41 @@ function handleClick(event) {
     checkForTie();
 };
 
-function callWinner () {
+function callWinnerX () {
     winAnnounce.textContent = winMessageX;
     winAnnounce.style.backgroundColor = "pink";
     turnAnnounce.textContent = '';
     turnAnnounce.style.backgroundColor = "white";
 };
+function callWinnerO () {
+    winAnnounce.textContent = winMessageO;
+    winAnnounce.style.backgroundColor = "pink";
+    turnAnnounce.textContent = '';
+    turnAnnounce.style.backgroundColor = "white";
+}
 
 function winner (){
     if (square1a.classList.contains("x") && square1b.classList.contains("x") && square1c.classList.contains("x")) {
-        callWinner();
+        callWinnerX();
     } else if (square2a.classList.contains("x") && square2b.classList.contains("x") && square2c.classList.contains("x")) {
-        callWinner();
+        callWinnerX();
     } else if (square3a.classList.contains("x") && square3b.classList.contains("x") && square3c.classList.contains("x")) {
-        callWinner();
+        callWinnerX();
     } else if (square1a.classList.contains("x") && square2b.classList.contains("x") && square3c.classList.contains("x")) {
-        callWinner();
+        callWinnerX();
     } else if (square3a.classList.contains("x") && square2b.classList.contains("x") && square1c.classList.contains("x")) {
-        callWinner();
+        callWinnerX();
     } else if (square1a.classList.contains("o") && square1b.classList.contains("o") && square1c.classList.contains("o")) {
-        callWinner();
+        callWinnerO();
     } else if (square2a.classList.contains("o") && square2b.classList.contains("o") && square2c.classList.contains("o")) {
-        callWinner();
+        callWinnerO();
     } else if (square3a.classList.contains("o") && square3b.classList.contains("o") && square3c.classList.contains("o")) {
-        callWinner();
+        callWinnerO();
     } else if (square1a.classList.contains("o") && square2b.classList.contains("o") && square3c.classList.contains("o")) {
-        callWinner();
+        callWinnerO();
     } else if (square3a.classList.contains("o") && square2b.classList.contains("o") && square1c.classList.contains("o")) {
-        callWinner();
-    else {
+        callWinnerO();
+    } else {
         winAnnounce.textContent = '';
     };
 };
